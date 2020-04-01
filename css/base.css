@@ -1,0 +1,25 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    background-color: white;
+     display: grid;
+    justify-content: center;
+}
+
+ @media (min-width:747px){
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 960px;
+        background-color: white;
+        margin: auto;
+    }
+
+ }  

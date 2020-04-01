@@ -1,0 +1,137 @@
+
+.a{
+    background-color: rgb(193, 211, 193);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.sec1{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill , minmax(480px, 1fr));
+    align-items: center;
+}
+
+.sec1 div{
+   
+    background-color: rgb(193, 211, 193);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.sec2{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    align-items: center;
+}
+.sec2 div{
+   
+    background-color:rgb(193, 211, 193);
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.i{
+    background-color: rgb(193, 211, 193);;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:747px){ 
+    body{
+        display: flex;
+    }
+    main{
+        width: 980px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 200px 190px 190px 190px 190px;
+        grid-template-rows: 100px 200px 250px 150px;
+        justify-content: center;
+    }
+ 
+  .sec2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+  }
+    div.a{
+        background-color: rgb(193, 211, 193);
+        height: 100px;
+        width: 960px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+   div.b{
+        height: 600px;
+        width: 200px;
+        grid-row-start: 2 ;
+        grid-row-end: 5 ;
+        background-color:rgb(193, 211, 193);
+       
+    }
+    .sec1{
+        grid-template-columns: none;
+    }
+    .sec3{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+    }
+    div.c{
+        height: 200px;
+        width: 380px;
+    }
+    div.d{
+        height: 200px;
+        width: 380px;
+    }
+    div.e{
+        height: 250px;
+        width: 190px;
+    }
+
+    div.f{
+        height: 250px;
+        width: 190px;
+    }
+
+    div.g{
+        height: 250px;
+        width: 190px;
+    }
+
+    div.h{
+        height: 250px;
+        width: 190px;
+    }
+
+    div.i{
+        height: 150px;
+        width: 760px;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4 ;
+        grid-row-end: 5 ;
+        border: 1px solid black;
+    }
+
+} 
